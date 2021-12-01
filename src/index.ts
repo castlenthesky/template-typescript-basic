@@ -1,7 +1,7 @@
 import config from './config';
 
-export function testFunction() {
-  return 'Hello World';
+export async function randBetween(min: number, max: number): Promise<number> {
+  return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-console.log(testFunction());
+console.log('Hello World');
